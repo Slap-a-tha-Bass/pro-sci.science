@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+footer {
+  grid-area: footer;
+  border-top: 1px solid black;
+  text-align: center;
+  color: $dark;
+  font-size: 0.8rem;
+}

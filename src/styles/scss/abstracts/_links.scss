@@ -1,0 +1,15 @@
+@use 'colors' as *;
+
+a {
+  text-decoration: none;
+  background-clip: none;
+  color: $dark;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin: 0 5vw;
+  &:hover {
+    color: $secondary;
+    text-decoration: underline;
+  }
+}
