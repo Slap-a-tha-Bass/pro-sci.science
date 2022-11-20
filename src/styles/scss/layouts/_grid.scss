@@ -10,7 +10,6 @@ body {
   line-height: $line-height;
   font-size: $font-size;
   background-color: $light;
-  color: $dark;
   margin: 0;
   display: grid;
   grid-template-areas:
@@ -18,5 +17,5 @@ body {
     'nav main aside'
     'nav footer footer';
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 80px 4fr 50px;
+  grid-template-rows: 120px 4fr 50px;
 }

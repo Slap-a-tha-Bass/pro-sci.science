@@ -1,9 +1,10 @@
+@use '../abstracts' as *;
+
 header {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 200px 4fr 1fr;
   place-items: center;
-  border-bottom: 1px solid black;
-  padding: 0 0.5rem;
+  border-bottom: 1px solid $tertiary;
   grid-area: header;
 }
