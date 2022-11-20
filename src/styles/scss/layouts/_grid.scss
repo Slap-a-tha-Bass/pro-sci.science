@@ -16,6 +16,20 @@ body {
     'header header header'
     'nav main aside'
     'nav footer footer';
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 0.5fr 2fr 1fr;
   grid-template-rows: 120px 4fr 50px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    grid-template-areas:
+      'header'
+      'main'
+      'aside'
+      'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px repeat(2, auto) 50px;
+  }
+  nav {
+    display: none;
+  }
 }

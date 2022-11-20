@@ -9,6 +9,7 @@ export default function RootLayout({ children }: any) {
     <html lang="en">
       <head>
         <title>ProSCI</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
       </head>
       <body>
         <Header />

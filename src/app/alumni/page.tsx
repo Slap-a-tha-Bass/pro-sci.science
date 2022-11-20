@@ -47,6 +47,18 @@ export default function AlumniPage() {
         cheering, shopping, eating, reading, and going to church.`}
       />
       <TeamCard
+        name="Marguerite Marquez"
+        title="Student Physical Therapist"
+        image="/headshots/Marguerite-headshot.png"
+        bio={`I am a second-year Doctorate of Physical Therapy student at the University of Alabama at Birmingham (UAB) in Birmingham, AL. I received my bachelor's degree in 
+        Psychology with minors in Neuroscience and Chemistry from the University of Mississippi (Hotty Toddy!). I am from Gulfport, MS, and I love the water. During my undergraduate 
+        career, I conducted research in a behavioral neuroscience lab and wrote and defended a thesis on Feedback Related Neuronal Processing During Motor Learning. This research 
+        contributed to a professional interest in neurological physical therapy. Throughout my undergraduate career, I also held multiple leadership positions in large scale community 
+        service organizations. This experience allowed me to realize that regardless of the exact nature of my future profession, I would like to work to serve others. Within the 
+        healthcare realm, that passion has evolved to working with and for medically underserved or marginalized populations. I currently serving as Clinical Director and Patient/Volunteer 
+        Coordinator for Equal Access Birmingham, a free clinic that serves the underinsured population of Birmingham, AL.`}
+      />
+      <TeamCard
         name="Sarah Taylor"
         title="Visiting Student"
         image="/headshots/Sarah-headshot.jpg"
@@ -77,6 +89,61 @@ export default function AlumniPage() {
         denervation in patients with facet joint syndromme. I am still working at the same university as a research assistant while pursuing a PhD in Rehabilitation Science. 
         My research focus is on spinal cord and traumatic brain injury rehabilitation. I joined Dr. Ceren Yarar-Fisher's lab in September, 2017, and I'm currently studying 
         the effects of neuromuscular electrical stimulation on muscle metabolism in individuals with sub-acute spinal cord injury.`}
+      />
+      <TeamCard
+        name="Baris Cetin"
+        title="Erasmus Research Scholar"
+        image="/headshots/Baris-headshot.jpg"
+        bio={`I earned my B.S. degree in Physical Therapy and Rehabilitation from Hacettepe University in 2013. After graduation I started working at the same university as a 
+        research assistant at the neurological rehabilitation unit. I earned my MSc degree in 2016 in the field of neurological rehabilitation. My research focus was studying 
+        the effect of spinal stabilization exercises on walking and balance in patients with Multiple Sclerosis. I have continued my studies at Hacettepe University and started 
+        my doctoral training in the field of neurological rehabilitation. I am currently studying at Dr. Ceren Yarar-Fisher's Lab and investigating the effect of neuromuscular 
+        electrical stimualtion on muscle metabolism in individuals with sub-acute spinal cord injury.`}
+      />
+      <TeamCard
+        name="Perry W. Griffin II"
+        title="Summer Medical Student"
+        image="/headshots/Perry-headshot.jpg"
+        bio={`As a medical student just completing their first year, I chose to pursue research over the 2017 summer to increase the breadth of my research experience to include 
+        working with patients in a clinical setting and pursuing answers to questions that may later impact patient care and recovery. I was born and raised in Birmingham, Alabama 
+        and graduated with a B.S. in Kinesiology from The University of Alabama at Birmingham. My college career began nontraditionally at the age of 27 after working as a personal 
+        fitness trainer. I felt led to pursue higher education as I realized my passions were with caring for and educating others in areas of health and well-being. Ultimately, 
+        I felt the call of medicine and began attending The University of Alabama School of Medicine in late 2016. My first research experience was during my undergraduate career 
+        under Dr. Gordon Fisher, where I performed immunohistochemistry to determine muscle fiber type ratios in participants before and after interventional exercise programs 
+        and performed cross-sectional analysis comparing vital measurements such as blood pressure, arterial elasticity, and insulin sensitivity. I became much more familiar with 
+        principles and pathways for which I was already passionate, while also being able to see how these phenotypic differences may affect health outcomes and risk in certain 
+        patient populations. My limited experiences have led me to believe that a career in physical medicine and rehabilitation would be exceptionally rewarding and I was 
+        fortunate enough to be selected to receive the Summer Research Fellowship Award from the Diabetes Research Center. This opportunity involves conducting research under the 
+        guidance of Dr. Yarar-Fisher, as it relates to patients with spinal cord injuries and the examination of novel nutritional modalities and their effects on protection and 
+        recovery from damage, as well as brown adipose tissue distribution, functionality, and activity. Personally observing how dramatically a patient's mobility can be altered 
+        by a single event and then being able to explore questions and seek answers that may lead to improvements in such patients' quality of life is a reward without parallel.`}
+      />
+      <TeamCard
+        name="Adarsh Kulkani"
+        title="Summer Medical Student"
+        image="/headshots/Adarsh-headshot.jpg"
+        bio={`I am a medical student about to start my second year here at the University of Alabama School of Medicine (UASOM). Born and brought up in Birmingham, I headed to 
+        Nashville, Tennessee for a change in scenery to attend Vanderbilt University for my undergraduate studies, earning a degree in Molecular and Cellular Biology. After 
+        gaining some perspective on basic science research during my time in college, I was curious to expand my horizons in the realm of research and try clinical or translational 
+        research. As a medical student, I wanted to enter an area of research that greatly interests me as well as an area that I could possibly see myself pursuing as a career. 
+        Taking neuroscience courses as an undergraduate gave me immense enthusiasm for medicine involving the nervous system and played a significant role in my decision to join 
+        Dr. Yarar-Fisher's lab. Through the Department of Physical Medicine and Rehabilitation Functional Neurorehabilitation Research Program, I received the FNR Scholarship 
+        award to do research this summer. My research will be investigating the effectiveness of a ketogenic diet in facilitating neuro-recovery following spinal cord injury 
+        (SCI). We believe processes that typically occur after SCI, such as glutamate excitotoxity, inflammation, and induction of apoptotic pathways, will be inhibited by 
+        ketone bodies resulting from a ketogenic diet. Our hypothesis is that 8 weeks of a ketogenic diet, as compared to a standard diet, immediately following SCI significantly 
+        improves motor and sensory function as well as functional independence in patients with complete SCI.`}
+      />
+      <TeamCard
+        name="Christian Behren"
+        title="Rotation Student"
+        image="/headshots/Christian-headshot.png"
+        bio={`I am a graduate student in the Department of Nutrition Science rotating in Dr. Yarar-Fisher's lab. I grew up in Miami, Florida, and attended Appalachian State 
+        University in Boone, NC earning my B.S. in Nutrition and Foods, and Exercise Science as well as my M.S. in Dietetics. I am incredibly excited and appreciative for the 
+        opportunity to work in Dr. Yarar-Fisher's lab. Rehabilitation Medicine is an area of research that has always interested me, but I have previously not had the opportunity 
+        to be exposed to. As a lifelong competitive athlete, I am interested in examining the differences both small and large between injured and trained muscle. Along with 
+        differences in how injured vs. trained muscle responds to nutrition. Gaining a better understanding of these intricate differences could lead to novel and improved nutrition 
+        and exercise intervention strategies for those with injury. Outside of school, my interests include running, hiking, cycling, cooking, traveling and hanging out with my 
+        French Bulldog, Django.`}
       />
     </main>
   );

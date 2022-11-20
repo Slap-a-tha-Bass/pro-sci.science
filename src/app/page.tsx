@@ -1,62 +1,10 @@
 export default function HomePage() {
   return (
     <main>
-      <h1>Home Page</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+      <h1>{`A Rebel's Approach`}</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. In quas ipsam
-        animi velit dolor? Odit, quidem? Laudantium at quo quibusdam quae enim,
-        velit porro voluptatibus voluptas laboriosam dicta accusantium dolore.
+        Changing spinal cord injury, acute and chronic care, through using
+        E-Stim, ketogenic dietary strategies, and gut microbiome modifications.
       </p>
     </main>
   );
