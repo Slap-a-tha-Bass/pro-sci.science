@@ -24,14 +24,47 @@ code {
   font-size: 105%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Papyrus", monospace, sans-serif;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 2.5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(0.75rem, 2.5vw, 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(0.75rem, 2.5vw, 1.25rem);
+}
+
 .card-primary {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-width: 300px;
-  padding: 3vw;
+  padding: 1.5vw;
   transition: ease-in-out 0.3s;
-  border-radius: 0.1rem;
+  border-top: 1px solid #0f1a20;
   background-color: #fdfff7;
   margin: 1rem 0;
 }
@@ -57,9 +90,9 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-width: 300px;
-  padding: 3vw;
+  padding: 1.5vw;
   transition: ease-in-out 0.3s;
-  border-radius: 0.1rem;
+  border-top: 1px solid #ac7b7d;
   background-color: transparent;
   margin: 1rem 0;
 }
@@ -85,9 +118,9 @@ code {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-width: 300px;
-  padding: 3vw;
+  padding: 1.5vw;
   transition: ease-in-out 0.3s;
-  border-radius: 0.1rem;
+  border-top: 1px solid #d7251f;
   background-color: transparent;
   margin: 1rem 0;
 }
@@ -283,7 +316,7 @@ footer {
 body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
   line-height: 1.5;
-  font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+  font-size: clamp(0.75rem, 1.5vw, 1.1rem);
   background-color: #fdfff7;
   margin: 0;
   display: grid;

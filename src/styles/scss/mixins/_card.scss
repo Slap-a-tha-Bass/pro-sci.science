@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-width: 300px;
-  padding: 3vw;
+  padding: 1.5vw;
   transition: ease-in-out 0.3s;
-  border-radius: 0.1rem;
+  border-top: 1px solid $border-color;
   background-color: $bg-color;
   margin: 1rem 0;
   img {
