@@ -1,12 +1,13 @@
 @use 'colors' as *;
 
-a:not(.logo) {
+a:not(.logo, .navlink) {
   text-decoration: none;
   background-clip: none;
   color: $dark;
   text-decoration: none;
+  border: 1px dotted $trans-light;
   border-radius: 0.5rem;
-  padding: 2vw;
+  padding: 1vw 1.5vw;
   transition: all 0.3s ease-in-out;
   margin: 0 2vw;
   &:hover {
@@ -16,5 +17,11 @@ a:not(.logo) {
   &:active {
     text-decoration: none;
     font-weight: bold;
+    background-color: $trans-light;
+    border: 1px dotted $light;
+    box-shadow: 0 0 0 0.2rem $trans-light;
+  }
+  &:not(:focus, :active) {
+    opacity: 0.8;
   }
 }

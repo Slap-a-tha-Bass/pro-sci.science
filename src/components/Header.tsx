@@ -13,12 +13,33 @@ export default function Header() {
           height={100}
         />
       </Link>
-      <div>
+      <div className="is-mobile">
         <Link href="/mission">Mission</Link>
         <Link href="/team">Team</Link>
         <Link href="/alumni">Alumni</Link>
       </div>
-      <Link href="/">Contact</Link>
+      <Link className="is-mobile" href="/">
+        Contact
+      </Link>
+      <label className="menu-button" htmlFor="menu-toggle" />
+      <input type="checkbox" id="menu-toggle" />
+      <ul id="menu">
+        <li>
+          <Link className="navlink" href="/mission">
+            Mission
+          </Link>
+        </li>
+        <li>
+          <Link className="navlink" href="/team">
+            Team
+          </Link>
+        </li>
+        <li>
+          <Link className="navlink" href="/alumni">
+            Alumni
+          </Link>
+        </li>
+      </ul>
     </header>
   );
 }

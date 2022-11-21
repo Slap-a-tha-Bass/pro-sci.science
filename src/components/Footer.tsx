@@ -3,7 +3,8 @@ export default function Footer() {
   const year = date.getFullYear();
   return (
     <footer>
-      <p>Copyright © {year}</p>
+      <p>Pro-SCI Copyright © {year}</p>
+      <p>Website by Pariah Projects</p>
     </footer>
   );
 }

@@ -3,7 +3,7 @@
 @use 'nav' as *;
 @use 'header' as *;
 @use 'aside' as *;
-@use 'footer' as *;
+// @use 'footer' as *;
 
 body {
   font-family: $font-family;
@@ -15,9 +15,9 @@ body {
   grid-template-areas:
     'header header header'
     'nav main aside'
-    'nav footer footer';
+    'footer footer footer';
   grid-template-columns: 0.5fr 2fr 1fr;
-  grid-template-rows: 120px 4fr 50px;
+  grid-template-rows: 100px 4fr 50px;
 }
 @media screen and (max-width: 768px) {
   body {

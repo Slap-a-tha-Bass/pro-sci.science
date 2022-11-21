@@ -2,8 +2,16 @@
 
 footer {
   grid-area: footer;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: $dark;
-  font-size: 0.8rem;
+  color: $light;
+  font-size: clamp(0.65rem, 1vw, 0.75rem);
+  p {
+    margin: 0 1rem;
+  }
 }
