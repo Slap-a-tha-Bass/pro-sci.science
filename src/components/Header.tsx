@@ -1,7 +1,10 @@
+'use client';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
     <header>
       <Link className="logo" href="/">
@@ -13,33 +16,36 @@ export default function Header() {
           height={100}
         />
       </Link>
-      <div className="is-mobile">
+      <div className="web-menu">
         <Link href="/mission">Mission</Link>
         <Link href="/team">Team</Link>
         <Link href="/alumni">Alumni</Link>
+        <Link href="/">Contact</Link>
       </div>
-      <Link className="is-mobile" href="/">
-        Contact
-      </Link>
-      <label className="menu-button" htmlFor="menu-toggle" />
-      <input type="checkbox" id="menu-toggle" />
-      <ul id="menu">
-        <li>
-          <Link className="navlink" href="/mission">
+      <div
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="mobile-menu-button"
+      />
+      <div
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        className="mobile-menu-button2"
+      />
+      {isMenuOpen && (
+        <div className="mobile-menu">
+          <Link onClick={() => setIsMenuOpen(false)} href="/mission">
             Mission
           </Link>
-        </li>
-        <li>
-          <Link className="navlink" href="/team">
+          <Link onClick={() => setIsMenuOpen(false)} href="/team">
             Team
           </Link>
-        </li>
-        <li>
-          <Link className="navlink" href="/alumni">
+          <Link onClick={() => setIsMenuOpen(false)} href="/alumni">
             Alumni
           </Link>
-        </li>
-      </ul>
+          <Link onClick={() => setIsMenuOpen(false)} href="/">
+            Contact
+          </Link>
+        </div>
+      )}
     </header>
   );
 }

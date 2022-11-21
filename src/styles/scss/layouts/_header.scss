@@ -3,15 +3,13 @@
 header {
   width: 100%;
   display: grid;
-  grid-template-columns: 200px 4fr 1fr;
+  grid-template-columns: 200px auto;
   place-items: center;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  background-color: $dark;
+  background-color: $primary;
   color: $light;
   grid-area: header;
   z-index: 1;
-  a {
+  a:not(.logo) {
     color: $light !important;
     text-decoration: none;
     font-size: clamp(0.75rem, 1vw, 1rem);
@@ -21,48 +19,58 @@ header {
       color: $link !important;
     }
   }
-  #menu-toggle {
-    display: none;
-    color: $light;
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  background-color: $primary;
+  line-height: 3;
+}
+.mobile-menu-button {
+  content: '';
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  position: absolute;
+  background-color: lighten($primary, 50%);
+  width: 50px;
+  height: 50px;
+  top: 35px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.8s ease-in-out;
+  background-clip: none;
+  &:hover {
+    transform: rotate(180deg);
   }
-  #menu {
-    position: absolute;
-    top: 120px;
-    right: 0;
-    background-color: $dark;
-    width: 20vw;
-    overflow: hidden;
-    max-height: 0;
-    padding: 0;
-    margin: 0 auto;
-    transition: all 0.5s ease;
-    z-index: 2;
-    li {
-      list-style: none;
-      text-align: center;
-      padding: 1rem 0;
-      border-bottom: 1px solid $light;
-      &:last-child {
-        border-bottom: none;
-      }
-    }
+  &:active,
+  &:focus {
+    transform: rotate(180deg);
   }
-  .menu-button {
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    background-color: $light;
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    transition: all 0.8s ease;
-    z-index: 3;
-    &:hover {
-      background-color: $link;
-      cursor: pointer;
-      transform: rotate(135deg);
-    }
+}
+.mobile-menu-button2 {
+  content: '';
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  position: absolute;
+  background-color: $black;
+  width: 30px;
+  height: 30px;
+  top: 45px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 0.8s ease-in-out;
+  background-clip: none;
+  &:hover {
+    transform: rotate(-180deg);
   }
-  #menu-toggle:checked + #menu {
-    max-height: 60vh;
+  &:active,
+  &:focus {
+    transform: rotate(-180deg);
   }
 }
 @media screen and (max-width: 768px) {
@@ -71,24 +79,13 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-  .is-mobile {
+  .web-menu {
     display: none;
-  }
-  .navlink {
-    display: block;
-    &:focus,
-    &:active {
-      color: $link !important;
-    }
   }
 }
 @media screen and (min-width: 769px) {
-  header {
-    #menu-toggle {
-      display: none;
-    }
-    #menu {
-      display: none;
-    }
+  .mobile-menu,
+  .mobile-menu-button {
+    display: none;
   }
 }

@@ -2,7 +2,7 @@ import TeamCard from '@components/teamCard';
 
 export default function AlumniPage() {
   return (
-    <main>
+    <main className="text-content">
       <h1>Alumni</h1>
       <TeamCard
         name="Erika Womack, PhD"

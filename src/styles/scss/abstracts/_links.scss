@@ -1,25 +1,23 @@
 @use 'colors' as *;
 
-a:not(.logo, .navlink) {
+a:not(.logo) {
   text-decoration: none;
-  background-clip: none;
   color: $dark;
   text-decoration: none;
-  border: 1px dotted $trans-light;
   border-radius: 0.5rem;
   padding: 1vw 1.5vw;
   transition: all 0.3s ease-in-out;
   margin: 0 2vw;
+  background-clip: none;
+  cursor: pointer;
   &:hover {
-    text-decoration: underline;
+    box-shadow: 0 0 1rem $light;
   }
   &:focus,
   &:active {
     text-decoration: none;
     font-weight: bold;
-    background-color: $trans-light;
-    border: 1px dotted $light;
-    box-shadow: 0 0 0 0.2rem $trans-light;
+    box-shadow: 0 0 1.5rem $light;
   }
   &:not(:focus, :active) {
     opacity: 0.8;
