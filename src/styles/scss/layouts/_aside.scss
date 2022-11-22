@@ -10,4 +10,7 @@ aside {
   border-left: 1px solid black;
   height: 90vh;
   overflow-y: auto;
+  @media screen and (max-width: 768px) {
+    height: max-content;
+  }
 }
