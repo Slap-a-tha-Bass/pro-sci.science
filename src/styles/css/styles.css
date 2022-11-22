@@ -435,6 +435,11 @@ aside {
   height: 90vh;
   overflow-y: auto;
 }
+@media screen and (max-width: 768px) {
+  .home-content {
+    height: max-content;
+  }
+}
 
 body {
   font-family: "Comic Sans MS", "Comic Sans", sans-serif;
