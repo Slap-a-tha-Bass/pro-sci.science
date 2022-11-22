@@ -32,6 +32,7 @@ export default function Header() {
         alt="menu"
         width={50}
         height={50}
+        className="header-image"
       />
       {isMenuOpen && (
         <div className="mobile-menu">

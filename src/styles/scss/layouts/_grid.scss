@@ -16,8 +16,18 @@ body {
     'header header header'
     'nav main aside'
     'footer footer footer';
-  grid-template-columns: 150px 3fr 1fr;
+  grid-template-columns: 200px 2fr 250px;
   grid-template-rows: 100px 4fr 50px;
+}
+@media screen and (max-width: 991px) {
+  body {
+    grid-template-columns: 150px 2fr 200px;
+  }
+}
+@media screen and (max-width: 896px) {
+  body {
+    grid-template-columns: 125px 2fr 175px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {

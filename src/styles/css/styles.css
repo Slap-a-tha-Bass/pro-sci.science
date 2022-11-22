@@ -314,11 +314,6 @@ main div img {
   height: 100%;
   object-fit: contain;
 }
-@media screen and (max-width: 768px) {
-  main div img {
-    object-fit: cover;
-  }
-}
 
 main:not(.text-content) {
   grid-area: main;
@@ -417,6 +412,15 @@ header img {
     display: none;
   }
 }
+@media screen and (min-width: 769px) {
+  .circle {
+    display: none;
+    box-shadow: none;
+  }
+  .header-image {
+    display: none;
+  }
+}
 aside {
   grid-area: aside;
   border-left: 1px solid black;
@@ -440,10 +444,20 @@ body {
   margin: 0;
   display: grid;
   grid-template-areas: "header header header" "nav main aside" "footer footer footer";
-  grid-template-columns: 150px 3fr 1fr;
+  grid-template-columns: 200px 2fr 250px;
   grid-template-rows: 100px 4fr 50px;
 }
 
+@media screen and (max-width: 991px) {
+  body {
+    grid-template-columns: 150px 2fr 200px;
+  }
+}
+@media screen and (max-width: 896px) {
+  body {
+    grid-template-columns: 125px 2fr 175px;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     grid-template-areas: "header" "main" "aside" "footer";

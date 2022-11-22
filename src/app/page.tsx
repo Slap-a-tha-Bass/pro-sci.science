@@ -17,7 +17,7 @@ export default function HomePage() {
       <div>
         <Image
           className="home-image"
-          src="/images/rebels-approach.svg"
+          src="/images/electric.svg"
           alt="Electric blue"
           priority
           fill

@@ -67,5 +67,9 @@ header {
 @media screen and (min-width: 769px) {
   .circle {
     display: none;
+    box-shadow: none;
+  }
+  .header-image {
+    display: none;
   }
 }
