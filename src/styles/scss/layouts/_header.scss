@@ -28,50 +28,65 @@ header {
   position: absolute;
   top: 120px;
   right: 0;
+  width: 50%;
   background-color: $primary;
   line-height: 3;
 }
-.mobile-menu-button {
-  content: '';
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+.mobile-menu-inactive {
   position: absolute;
-  background-color: lighten($primary, 50%);
-  width: 50px;
-  height: 50px;
-  top: 35px;
+  background: radial-gradient(
+    $light 0%,
+    darken($light, 5%) 12.5%,
+    lighten($primary, 20%) 25%,
+    lighten($primary, 10%) 50%,
+    lighten($primary, 5%) 75%,
+    $primary 85%,
+    darken($primary, 5%) 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 6px $light;
+  width: 40px;
+  height: 40px;
+  top: 40px;
   right: 20px;
   cursor: pointer;
   z-index: 2;
-  transition: all 0.8s ease-in-out;
   background-clip: none;
+  transition: all 0.3s ease-in-out;
   &:hover {
-    transform: rotate(180deg);
-  }
-  &:active,
-  &:focus {
-    transform: rotate(180deg);
+    background: radial-gradient(
+      darken($primary, 5%) 0%,
+      $primary 12.5%,
+      lighten($primary, 5%) 25%,
+      lighten($primary, 10%) 50%,
+      darken($light, 8%) 75%,
+      darken($light, 5%) 85%,
+      $light 100%
+    );
+    box-shadow: 0 0 12px $light;
   }
 }
-.mobile-menu-button2 {
-  content: '';
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+.mobile-menu-active {
   position: absolute;
-  background-color: $black;
-  width: 30px;
-  height: 30px;
-  top: 45px;
-  right: 30px;
+  background: radial-gradient(
+    darken($primary, 5%) 0%,
+    $primary 12.5%,
+    lighten($primary, 5%) 25%,
+    lighten($primary, 10%) 50%,
+    darken($light, 8%) 75%,
+    darken($light, 5%) 85%,
+    $light 100%
+  );
+  border-radius: 50%;
+  box-shadow: 0 0 6px $light;
+  width: 40px;
+  height: 40px;
+  top: 40px;
+  right: 20px;
   cursor: pointer;
-  z-index: 3;
-  transition: all 0.8s ease-in-out;
+  z-index: 2;
   background-clip: none;
-  &:hover {
-    transform: rotate(-180deg);
-  }
-  &:active,
-  &:focus {
-    transform: rotate(-180deg);
-  }
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 768px) {
   header {
@@ -84,8 +99,8 @@ header {
   }
 }
 @media screen and (min-width: 769px) {
-  .mobile-menu,
-  .mobile-menu-button {
+  .mobile-menu-active,
+  .mobile-menu-inactive {
     display: none;
   }
 }

@@ -1,6 +1,6 @@
 @use 'colors' as *;
 
-a:not(.logo) {
+a:not(.logo, .navlink) {
   text-decoration: none;
   color: $dark;
   text-decoration: none;

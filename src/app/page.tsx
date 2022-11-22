@@ -16,7 +16,7 @@ export default function HomePage() {
     <main>
       <div>
         <Image
-          className="logo"
+          className="home-image"
           src="/images/rebels-approach.svg"
           alt="Electric blue"
           priority

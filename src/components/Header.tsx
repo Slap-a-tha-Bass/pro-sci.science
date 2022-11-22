@@ -17,31 +17,43 @@ export default function Header() {
         />
       </Link>
       <div className="web-menu">
-        <Link href="/mission">Mission</Link>
+        <Link href="/about">About</Link>
         <Link href="/team">Team</Link>
         <Link href="/alumni">Alumni</Link>
         <Link href="/">Contact</Link>
       </div>
       <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="mobile-menu-button"
-      />
-      <div
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className="mobile-menu-button2"
+        className={isMenuOpen ? 'mobile-menu-active' : 'mobile-menu-inactive'}
       />
       {isMenuOpen && (
         <div className="mobile-menu">
-          <Link onClick={() => setIsMenuOpen(false)} href="/mission">
-            Mission
+          <Link
+            className="navlink"
+            onClick={() => setIsMenuOpen(false)}
+            href="/about"
+          >
+            About
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/team">
+          <Link
+            className="navlink"
+            onClick={() => setIsMenuOpen(false)}
+            href="/team"
+          >
             Team
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/alumni">
+          <Link
+            className="navlink"
+            onClick={() => setIsMenuOpen(false)}
+            href="/alumni"
+          >
             Alumni
           </Link>
-          <Link onClick={() => setIsMenuOpen(false)} href="/">
+          <Link
+            className="navlink"
+            onClick={() => setIsMenuOpen(false)}
+            href="/"
+          >
             Contact
           </Link>
         </div>

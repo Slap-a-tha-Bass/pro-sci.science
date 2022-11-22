@@ -1,9 +1,9 @@
 'use client';
-
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-
 export default function Aside() {
+  const pathname = usePathname();
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     const s = document.createElement('script');
@@ -12,9 +12,11 @@ export default function Aside() {
     document.head.appendChild(s);
     setIsLoaded(true);
   }, []);
+
   if (!isLoaded) return <p>Loading...</p>;
+
   return (
-    <aside>
+    <aside className={pathname === '/' ? 'home-content' : ''}>
       {isLoaded && (
         <Link
           className="twitter-timeline twitter-card"

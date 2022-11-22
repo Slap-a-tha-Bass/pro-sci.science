@@ -1,6 +1,13 @@
 aside {
   grid-area: aside;
   border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  height: max-content;
+  overflow-y: auto;
+}
+.home-content {
+  grid-area: aside;
+  border-left: 1px solid black;
   height: 90vh;
   overflow-y: auto;
 }
