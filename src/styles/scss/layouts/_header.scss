@@ -19,6 +19,28 @@ header {
       color: $link !important;
     }
   }
+  img {
+    margin-right: 1.5rem;
+    z-index: 1;
+  }
+}
+.circle {
+  position: absolute;
+  top: 35px;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $transparent;
+  box-shadow: 0 0 10px $light;
+  z-index: 2;
+  background-clip: none;
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 20px $light;
+    cursor: pointer;
+  }
 }
 .mobile-menu {
   display: flex;
@@ -32,62 +54,6 @@ header {
   background-color: $primary;
   line-height: 3;
 }
-.mobile-menu-inactive {
-  position: absolute;
-  background: radial-gradient(
-    $light 0%,
-    darken($light, 5%) 12.5%,
-    lighten($primary, 20%) 25%,
-    lighten($primary, 10%) 50%,
-    lighten($primary, 5%) 75%,
-    $primary 85%,
-    darken($primary, 5%) 100%
-  );
-  border-radius: 50%;
-  box-shadow: 0 0 6px $light;
-  width: 40px;
-  height: 40px;
-  top: 40px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 2;
-  background-clip: none;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: radial-gradient(
-      darken($primary, 5%) 0%,
-      $primary 12.5%,
-      lighten($primary, 5%) 25%,
-      lighten($primary, 10%) 50%,
-      darken($light, 8%) 75%,
-      darken($light, 5%) 85%,
-      $light 100%
-    );
-    box-shadow: 0 0 12px $light;
-  }
-}
-.mobile-menu-active {
-  position: absolute;
-  background: radial-gradient(
-    darken($primary, 5%) 0%,
-    $primary 12.5%,
-    lighten($primary, 5%) 25%,
-    lighten($primary, 10%) 50%,
-    darken($light, 8%) 75%,
-    darken($light, 5%) 85%,
-    $light 100%
-  );
-  border-radius: 50%;
-  box-shadow: 0 0 6px $light;
-  width: 40px;
-  height: 40px;
-  top: 40px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 2;
-  background-clip: none;
-  transition: all 0.3s ease-in-out;
-}
 @media screen and (max-width: 768px) {
   header {
     display: flex;
@@ -99,8 +65,7 @@ header {
   }
 }
 @media screen and (min-width: 769px) {
-  .mobile-menu-active,
-  .mobile-menu-inactive {
+  .circle {
     display: none;
   }
 }

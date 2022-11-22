@@ -22,9 +22,16 @@ export default function Header() {
         <Link href="/alumni">Alumni</Link>
         <Link href="/">Contact</Link>
       </div>
-      <div
+      {/* <div
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         className={isMenuOpen ? 'mobile-menu-active' : 'mobile-menu-inactive'}
+      /> */}
+      <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="circle" />
+      <Image
+        src="/favicon-white-transbg.png"
+        alt="menu"
+        width={50}
+        height={50}
       />
       {isMenuOpen && (
         <div className="mobile-menu">
