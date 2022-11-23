@@ -359,14 +359,12 @@ main:is(.img-content) {
 main:is(.img-content) div {
   position: relative;
   background: #031f4a !important;
-  height: 100% !important;
   width: 96.5% !important;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
   main:is(.img-content) div {
     width: 91.5% !important;
-    height: 75% !important;
   }
 }
 main:is(.img-content) div img {
