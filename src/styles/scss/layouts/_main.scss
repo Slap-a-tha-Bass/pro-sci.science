@@ -24,21 +24,17 @@ main:is(.img-content) {
   height: fit-content;
   overflow-y: auto;
   overflow-x: hidden;
-  background: linear-gradient(
-    90deg,
-    darken($primary, 11%),
-    $primary
-  ) !important;
+  background: $primary !important;
   div {
     position: relative;
-    background: linear-gradient(
-      90deg,
-      darken($primary, 11%),
-      $primary
-    ) !important;
-    height: 100%;
-    width: 100%;
+    background: $primary !important;
+    height: 100% !important;
+    width: 96.5% !important;
     padding: 0;
+    @media screen and (max-width: 768px) {
+      width: 91.5% !important;
+      height: 75% !important;
+    }
     img {
       width: 100%;
       height: 100%;

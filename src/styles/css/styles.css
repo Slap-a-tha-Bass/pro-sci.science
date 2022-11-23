@@ -354,14 +354,20 @@ main:is(.img-content) {
   height: fit-content;
   overflow-y: auto;
   overflow-x: hidden;
-  background: linear-gradient(90deg, #010814, #031f4a) !important;
+  background: #031f4a !important;
 }
 main:is(.img-content) div {
   position: relative;
-  background: linear-gradient(90deg, #010814, #031f4a) !important;
-  height: 100%;
-  width: 100%;
+  background: #031f4a !important;
+  height: 100% !important;
+  width: 96.5% !important;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  main:is(.img-content) div {
+    width: 91.5% !important;
+    height: 75% !important;
+  }
 }
 main:is(.img-content) div img {
   width: 100%;
