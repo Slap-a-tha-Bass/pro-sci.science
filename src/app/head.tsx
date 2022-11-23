@@ -14,7 +14,7 @@ export default function Head() {
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
       <meta name="google" content="nositelinkssearchbox" />
-      <link rel="icon" href="/favicon-white.png" />
+      <link rel="icon" href="/spinalcordinjury.png" />
     </head>
   );
 }
