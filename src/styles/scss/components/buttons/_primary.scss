@@ -3,5 +3,8 @@
 
 .btn-primary {
   // button($bg-color, $text-color, $border-color)
-  @include button($transparent, $light, $tertiary);
+  @include button($primary, $light, $tertiary);
+}
+.btn-primary:disabled {
+  @include button($gray-500, $light, $tertiary);
 }

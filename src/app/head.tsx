@@ -3,7 +3,7 @@ export default function Head() {
     <head>
       <meta charSet="utf-8" />
       <meta name="google" content="notranslate" />
-      <meta http-equiv="Content-Language" content="en_US" />
+      <meta httpEquiv="Content-Language" content="en_US" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Pro-SCI - Spinal Cord Injury Research</title>
       <meta
