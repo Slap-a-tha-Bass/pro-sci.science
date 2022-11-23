@@ -16,7 +16,11 @@ export default function Aside() {
   if (!isLoaded) return <p>Loading...</p>;
 
   return (
-    <aside className={pathname === '/' ? 'home-content' : ''}>
+    <aside
+      className={
+        pathname === '/' || pathname === '/gallery' ? 'home-content' : ''
+      }
+    >
       {isLoaded && (
         <Link
           className="twitter-timeline twitter-card"

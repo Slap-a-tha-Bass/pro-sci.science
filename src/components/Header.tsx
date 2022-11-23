@@ -21,12 +21,9 @@ export default function Header() {
         <Link href="/team">Team</Link>
         <Link href="/alumni">Alumni</Link>
         <Link href="/gallery">Gallery</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/contact">Contact</Link>
       </div>
-      {/* <div
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        className={isMenuOpen ? 'mobile-menu-active' : 'mobile-menu-inactive'}
-      /> */}
+
       <div onClick={() => setIsMenuOpen(!isMenuOpen)} className="circle" />
       <Image
         src="/favicon-white-transbg.png"
@@ -68,7 +65,7 @@ export default function Header() {
           <Link
             className="navlink"
             onClick={() => setIsMenuOpen(false)}
-            href="/"
+            href="/contact"
           >
             Contact
           </Link>

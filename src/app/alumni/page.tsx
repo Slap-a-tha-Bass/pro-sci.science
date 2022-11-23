@@ -21,6 +21,18 @@ export default function AlumniPage() {
         their food and culture, tailgating, and relaxing.`}
       />
       <TeamCard
+        name="Jaden Adams"
+        title="Student"
+        image="/headshots/Jaden-headshot.png"
+        bio={`I am from Springville, AL and I currently attend Jefferson State Community College. My major is biology and I plan on pursuing a career in physical therapy. 
+        I am currently involved in organizations such as; Phi Theta Kappa, Sigma Kappa Delta, Mu Alpha Theta, and Men 2 Men. I am also involved in a program called Blazing 
+        to Biomedical careers which is in partnership between Jefferson State Community College (JSCC) and the University of Alabama at Birmingham (UAB). This program aids 
+        students in obtaining a baccalaureate degree in the behavioral or biomedical sciences so they can go on to further education and start a career in biomedical 
+        research. While attending this internship, I was privileged to work under Dr. Yarar-Fisher, Dr. Erika Womack, Dr. Jia Li, and Amal Alharbi. I learned a great amount 
+        of useful techniques dealing with STEM research and I had a great time working with them. Some of my hobbies include listening to music, playing the drums, playing 
+        sports, and exercising.`}
+      />
+      <TeamCard
         name="Miles Grigorian"
         title="PhD Student"
         image="/headshots/Miles-headshot.jpg"
