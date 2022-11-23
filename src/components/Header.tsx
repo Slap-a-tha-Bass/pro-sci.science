@@ -20,6 +20,7 @@ export default function Header() {
         <Link href="/about">About</Link>
         <Link href="/team">Team</Link>
         <Link href="/alumni">Alumni</Link>
+        <Link href="/gallery">Gallery</Link>
         <Link href="/">Contact</Link>
       </div>
       {/* <div
@@ -56,6 +57,13 @@ export default function Header() {
             href="/alumni"
           >
             Alumni
+          </Link>
+          <Link
+            className="navlink"
+            onClick={() => setIsMenuOpen(false)}
+            href="/gallery"
+          >
+            Gallery
           </Link>
           <Link
             className="navlink"
