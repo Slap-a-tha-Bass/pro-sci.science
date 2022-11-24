@@ -147,7 +147,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Christian Behren"
-        title="Pre-Med Student"
+        title="Nutrition Student"
         image="/headshots/Christian-headshot.png"
         bio={`I am a graduate student in the Department of Nutrition Science rotating in Dr. Yarar-Fisher's lab. I grew up in Miami, Florida, and attended Appalachian State 
         University in Boone, NC earning my B.S. in Nutrition and Foods, and Exercise Science as well as my M.S. in Dietetics. I am incredibly excited and appreciative for the 
