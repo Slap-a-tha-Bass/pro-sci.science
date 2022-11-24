@@ -22,7 +22,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Jaden Adams"
-        title="Student"
+        title="Biology Student"
         image="/headshots/Jaden-headshot.png"
         bio={`I am from Springville, AL and I currently attend Jefferson State Community College. My major is biology and I plan on pursuing a career in physical therapy. 
         I am currently involved in organizations such as; Phi Theta Kappa, Sigma Kappa Delta, Mu Alpha Theta, and Men 2 Men. I am also involved in a program called Blazing 
@@ -34,7 +34,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Miles Grigorian"
-        title="PhD Student"
+        title="Medical Student"
         image="/headshots/Miles-headshot.jpg"
         bio={`I am a 4th year post-doctoral scholar at Rehabilitation Medicine Laboratory. I am from China, and I earned my master's degree in Molecular Genetics 
         from the University of Cincinnati and my PhD degree in Nutrition Sciences from Purdue University. During my PhD training, I was involved with clinical trials 
@@ -48,7 +48,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Zoe Samira Evans"
-        title="Student Intern"
+        title="Biology Student"
         image="/headshots/Zoe-headshot.jpg"
         bio={`I am a native of Bessemer, AL and I attend Lawson State Community College in Birmingham, AL where my major is Biology. Throughout high school, I was involved 
         in many activities including the marching and concert bands, captain of cheerleading team, beta club, FBLA, and Student Government Association. In college, I am 
@@ -72,7 +72,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Sarah Taylor"
-        title="Visiting Student"
+        title="Pre-Med Student"
         image="/headshots/Sarah-headshot.jpg"
         bio={`I am a pre-med student at Wake Forest University in Winston-Salem, NC majoring in Health and Exercise Science with minors in Chemistry and Bioethics. I am 
         originally from Birmingham, AL, and I graduated from Mountain Brook High School in 2019. My undergraduate courses in Health and Exercise Science have led me to 
@@ -114,7 +114,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Perry W. Griffin II"
-        title="Summer Medical Student"
+        title="Medical Student"
         image="/headshots/Perry-headshot.jpg"
         bio={`As a medical student just completing their first year, I chose to pursue research over the 2017 summer to increase the breadth of my research experience to include 
         working with patients in a clinical setting and pursuing answers to questions that may later impact patient care and recovery. I was born and raised in Birmingham, Alabama 
@@ -132,7 +132,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Adarsh Kulkani"
-        title="Summer Medical Student"
+        title="Medical Student"
         image="/headshots/Adarsh-headshot.jpg"
         bio={`I am a medical student about to start my second year here at the University of Alabama School of Medicine (UASOM). Born and brought up in Birmingham, I headed to 
         Nashville, Tennessee for a change in scenery to attend Vanderbilt University for my undergraduate studies, earning a degree in Molecular and Cellular Biology. After 
@@ -147,7 +147,7 @@ export default function AlumniPage() {
       />
       <TeamCard
         name="Christian Behren"
-        title="Rotation Student"
+        title="Pre-Med Student"
         image="/headshots/Christian-headshot.png"
         bio={`I am a graduate student in the Department of Nutrition Science rotating in Dr. Yarar-Fisher's lab. I grew up in Miami, Florida, and attended Appalachian State 
         University in Boone, NC earning my B.S. in Nutrition and Foods, and Exercise Science as well as my M.S. in Dietetics. I am incredibly excited and appreciative for the 
